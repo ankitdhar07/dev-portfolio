@@ -1,0 +1,366 @@
+<section class="hero" id="home">
+  <div class="container">
+    <p class="eyebrow">Java • Spring Boot • Angular • Docker • Resilience4j</p>
+    <h1>{{ name }} — {{ title }}</h1>
+    <p class="subtitle">
+      Building resilient, performant systems for banking and high-scale
+      products. Spring Boot + Angular practitioner with strong focus on
+      immutability, concurrency, and reliability.
+    </p>
+    <div class="cta">
+      <a routerLink="/" fragment="projects" class="btn primary"
+        >View Projects</a
+      >
+      <a routerLink="/" fragment="contact" class="btn primary">Contact</a>
+      <a href="/assets/resume.pdf" download class="btn secondary"
+        >Download CV</a
+      >
+    </div>
+  </div>
+</section>
+
+<app-terminal></app-terminal>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I design and ship backend-heavy, customer-facing systems with Java 17+,
+      Spring Boot 3, Docker, and Angular. I care about clean architecture,
+      measurable performance, and operational excellence.
+    </p>
+    <div class="highlights">
+      <div class="card">
+        <h3>Backend</h3>
+        <p>Spring Boot, JPA, WebSocket, Resilience4j, PostgreSQL, Redis</p>
+      </div>
+      <div class="card">
+        <h3>Frontend</h3>
+        <p>Angular 19, TypeScript, RxJS, responsive UI, SSR-ready</p>
+      </div>
+      <div class="card">
+        <h3>DevOps</h3>
+        <p>
+          Docker, Nginx reverse proxy, SSL/TLS, GitHub Pages frontend hosting
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Timeline -->
+<section class="experience" id="experience">
+  <div class="container">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">July 2022 - Present</div>
+        <div class="timeline-content">
+          <h3>Senior Software Engineer</h3>
+          <p class="company">ABN AMRO via Eonics</p>
+          <ul>
+            <li>
+              Owned the end-to-end development of the customer-facing "Daily
+              Limit" feature in the banking app, from initial design to
+              production deployment for backend for frontend layer.
+            </li>
+            <li>
+              Ensured the reliability of critical features by maintaining and
+              executing the team's Cucumber-based BDD test suite, aligning test
+              cases with business requirements.
+            </li>
+            <li>
+              Provide ongoing support on call (piket) rotation, production issue
+              resolution for critical applications.
+            </li>
+            <li>
+              Managed a complex hybrid environment, supporting on-premise Spring
+              Boot applications with IBM WebSphere and cloud-native services on
+              Azure.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Feb 2022 - July 2022</div>
+        <div class="timeline-content">
+          <h3>Tech Lead | Senior Software Engineer</h3>
+          <p class="company">Tech Lead | BrainsFirst</p>
+          <ul>
+            <li>
+              Led the technical design and implementation of Spring Boot
+              microservices architecture, improving system modularity and
+              enabling faster feature development.
+            </li>
+            <li>
+              Resolving instablity issues by reconfiguring the Elastic Beanstalk
+              setup for the core application.
+            </li>
+            <li>
+              Mentored a team of developers, improving code quality and team
+              velocity through regular code reviews and pair programming
+              sessions.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Oct 2019 - Feb 2022</div>
+        <div class="timeline-content">
+          <h3>Software Engineer</h3>
+          <p class="company">Infor BV</p>
+          <ul>
+            <li>
+              ION Team: Engineered a tenant management system for the
+              multi-tenant architecture, gracefully migrating tenants between
+              servers based on real-time CPU and RAM usage.
+            </li>
+            <li>
+              Implemented automated tenant migration logic based on real-time
+              server resource utilization (CPU, RAM, disk I/O)
+            </li>
+            <li>
+              Designed graceful tenant migration process with zero downtime
+              using connection draining and state synchronization
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Feb 2015 - Oct 2019</div>
+        <div class="timeline-content">
+          <h3>Senior Software Engineer</h3>
+          <p class="company">Infosys Ltd</p>
+          <ul>
+            <li>
+              ABN AMRO (Smart Document Capture): Automated data extraction by
+              writing complex Regex rules for an OCR engine, allowing the system
+              to pull data from scanned documents automatically
+            </li>
+            <li>
+              MiFID II Compliance Platform (Record Keeping Group): Engineered a
+              Java-based ETL application to comply with MiFID II regulations,
+              processing data from NAS servers for archival in Nuxeo (hot
+              storage) and HBase (cold storage). Deployed and managed the
+              application on IBM WebSphere and used Sonar and App Scan for code
+              quality.
+            </li>
+            <li>
+              Liberty Global (Ziggo): Developed and configured business rule
+              applications for mobile plans using the IBM ODM tool and Java
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured" id="projects">
+  <div class="container">
+    <h2>Featured Work</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Banking App (Immutable Core)</h3>
+        <p>
+          ACID transactions, immutable records, circuit breakers, retries,
+          WebSocket alerts.
+        </p>
+        <div class="tags">
+          <span>Spring Boot</span><span>PostgreSQL</span
+          ><span>Resilience4j</span>
+        </div>
+        <div class="project-links">
+          <a
+            href="https://github.com/yourusername/banking-app"
+            target="_blank"
+            class="project-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            Code
+          </a>
+          <a href="#" target="_blank" class="project-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M14 3v2H4v14h14v-6h2v8H2V3h12zm6.94 0L17 6.94 14.06 4 18 .06 21.94 4z"
+              />
+            </svg>
+            Demo
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Interview Prep Platform</h3>
+        <p>
+          Searchable Q&A, mock interviews, progress tracking, spaced repetition.
+        </p>
+        <div class="tags">
+          <span>Angular</span><span>Spring Boot</span><span>MongoDB</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="project-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            Code
+          </a>
+          <a href="#" target="_blank" class="project-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M14 3v2H4v14h14v-6h2v8H2V3h12zm6.94 0L17 6.94 14.06 4 18 .06 21.94 4z"
+              />
+            </svg>
+            Demo
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Performance Playbook</h3>
+        <p>
+          Network latency drills, GC tuning demos, concurrency patterns with
+          metrics.
+        </p>
+        <div class="tags">
+          <span>Java 17+</span><span>RxJS</span><span>Observability</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="project-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            Code
+          </a>
+          <a href="#" target="_blank" class="project-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M14 3v2H4v14h14v-6h2v8H2V3h12zm6.94 0L17 6.94 14.06 4 18 .06 21.94 4z"
+              />
+            </svg>
+            Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="certifications">
+  <div class="container">
+    <h2>Certifications & Achievements</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-icon">☁️</div>
+        <h3>Microsoft Certified</h3>
+        <p>Azure Fundamentals</p>
+        <span class="cert-year">2024</span>
+        <a href="#" target="_blank" class="cert-link">Show credential</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">☁️</div>
+        <h3>AWS Cloud Quest</h3>
+        <p>Cloud Practitioner</p>
+        <span class="cert-year">2024</span>
+        <a
+          href="https://www.credly.com/badges/2f7b072e-0bca-4bfd-8e22-1c0a32e469e0?source=linked_in_profile"
+          target="_blank"
+          class="cert-link"
+          >Show credential</a
+        >
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🤖</div>
+        <h3>Problem Solving</h3>
+        <p>HackerRank - Credential ID: GDON5L9IRREE</p>
+        <span class="cert-year">2020</span>
+        <a
+          href="https://www.hackerrank.com/certificates/d519a976b9f3"
+          target="_blank"
+          class="cert-link"
+          >Show credential</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <p>
+      Available for backend-heavy roles, banking/fintech systems, and high-scale
+      products.
+    </p>
+    <div class="contact-row">
+      <a class="btn ghost" href="mailto:ankitdhar07@gmail.com">Email Me</a>
+      <a
+        class="btn ghost"
+        href="https://www.linkedin.com/in/ankit-kumar-dhar/"
+        target="_blank"
+        rel="noreferrer"
+        >LinkedIn</a
+      >
+      <a
+        class="btn ghost"
+        href="https://github.com/ankitdhar07"
+        target="_blank"
+        rel="noreferrer"
+        >GitHub</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- NEW: Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Ankit Kumar. Built with Angular 19 & Spring Boot.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
