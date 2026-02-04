@@ -103,13 +103,42 @@
 }
 
 .contact {
-  .contact-row {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
+ .contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  .btn.ghost {
+    display: inline-flex;
+    align-items: center;
+    color: #4d4d57; /* Optional: Makes the text dark grey instead of blue */
+    
+    i {
+      margin-right: 8px;
+      font-size: 1.4rem; /* ⬆️ Increased Icon Size */
+      transition: transform 0.2s ease;
+    }
+
+    &:hover i {
+      transform: scale(1.15); /* Grows slightly more on hover */
+    }
+
+    /* 🎨 Original Brand Colors */
+    .fa-envelope {
+      color: #EA4335; /* Gmail Red */
+    }
+
+    .fa-linkedin {
+      color: #0077B5; /* LinkedIn Blue */
+    }
+
+    .fa-github {
+      color: #333333; /* GitHub Black */
+    }
   }
+}
 }
 
 .highlights,
@@ -199,7 +228,7 @@
 // Experience Timeline
 .experience {
   .timeline {
-    position: relative;
+    position:  relative;
     padding: 2rem 0;
 
     &::before {
@@ -392,7 +421,7 @@
     }
 
     .cert-icon {
-      font-size: 3rem;
+      font-size: 7rem;
       margin-bottom: 1rem;
     }
 
